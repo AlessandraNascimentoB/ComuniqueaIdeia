@@ -318,7 +318,7 @@ header{
   .secao_contato{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 2rem;
     padding: 0.3rem;
   }
   
@@ -430,6 +430,11 @@ header{
     :root{
     
         /*  WEB */
+        --topo_pagina: 3rem;
+        --titulo_grande: 2rem;
+        --botao: 1.1rem;
+        --lista: 1.5rem;
+        --tamanho_header: 0px;
         --cabecalho-01: 4rem;
         --cabecalho-02: 2rem;
         --cabecalho-03: 2rem;
@@ -443,13 +448,15 @@ header{
     
     }
 
+    p{
+      font-size: 1.6rem;
+    }
+
 
     .container_desktop{
       margin: 0 auto;
-      max-width: 1080px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      max-width: 1300px;
+
     }
 
     #menu{
@@ -503,6 +510,42 @@ header{
 
     #btn-mobile {
     display: none;
+    }
+
+    /* nossos serviços */
+
+    #servico_imagem{
+      width: 400px;
+    }
+
+    /* footer */
+    .footer{
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin: 0;
+      align-items: start;
+    }
+
+    #logo_footer{
+      width: 300px;
+      height: fit-content;
+      margin-top: 4rem;
+    }
+
+    footer h4{
+      font-size: 1.6rem;
+      text-align: left;
+    }
+
+    .icones_redes img{
+      width: 45px;
+      height: 45px;
+      margin-right: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .secao_contato{
+      align-items: center;
     }
 
 
