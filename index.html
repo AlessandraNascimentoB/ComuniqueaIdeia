@@ -11,10 +11,13 @@
     <title>Comunique a ideia</title>
 </head>
     
-<header id="header" class="container">
-    <img id="fundo_header" src="./imagens/fundo_header.png">
+<header id="header" class="container container_header">
+
     <a href=""><img  id="logo" src="./imagens/logo_verde.png"></a>
     <nav id="nav">
+        <img id="fundo_header" src="./imagens/fundo_header.png">
+        <img id="circulo_esquerdo" src="./imagens/fundoo.png">
+        <img id="circulo_direito" src="imagens/fundoo.png">
       <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
         <span id="hamburger"></span>
       </button>
@@ -29,15 +32,13 @@
 
 
     
-    <main class="container">
+    <main class="container  container_desktop">
         <!-- Topo com nome da página -->
         <section class="topo_pagina">
-            <img id="circulo_esquerdo" src="./imagens/fundoo.png">
-            <img id="circulo_direito" src="imagens/fundoo.png">
             <h1>Conhecer</h1>
             <h1>Compartilhar</h1>
             <h1>Comunicar</h1>
-            <p><b>Compartilhar</b> e trocar o que há de melhor: o <b>conhecimento</b></p>
+            <p id="subtitulo"><b>Compartilhar</b> e trocar o que há de melhor: o <b>conhecimento</b></p>
             <button class="saiba_mais"><a href="#">Saiba mais</a></button>
 
         </section>
@@ -52,15 +53,18 @@
         <!-- Nossos serviços -->
         <section>
             <h2>Nossos Serviços</h2>
-            <ul id="servicos">
-                <li>Comunicação Empresarial</li>
-                <li>Assessoria de Imprensa </li>
-                <li>Branding</li>
-                <li>Gestão de Mídias Sociais</li>
-                <li>Inbound Marketing</li>
-            </ul>
+            <div id="servico_secao">
+                <ul id="servicos">
+                    <li>Comunicação Empresarial</li>
+                    <li>Assessoria de Imprensa </li>
+                    <li>Branding</li>
+                    <li>Gestão de Mídias Sociais</li>
+                    <li>Inbound Marketing</li>
+                </ul>
+                <img id="servico_imagem" src="imagens/nossos_serviços.png" alt="">
+            </div>
             <div class="centraliza"><button class="saiba_mais"><a href="#">Saiba Mais</a></button></div>
-            <img src="" alt="">
+
         </section>
 
         <!-- Comunicando Ideias -->

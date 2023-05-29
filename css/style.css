@@ -11,10 +11,10 @@
     :root{
 
         /* MOBILE */
-       --topo_pagina: 1.7rem;
+       --topo_pagina: 2.2rem;
        --titulo_grande: 1.3rem;
        --botao: 1.1rem;
-       --cabecalho-04: 2.4rem;
+       --tamanho_header: 70px;
        --cabecalho-05: 3.6rem;
        --cabecalho-06: 1.6rem;
        --paragrafo-01: 2.4rem;
@@ -53,7 +53,7 @@ header{
 }
 #header{
     box-sizing: border-box;
-    height: 70px ;
+    height: var(--tamanho_header);
     padding-top: 0rem;
     display: flex;
     align-items: center;
@@ -76,10 +76,27 @@ header{
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: calc(100vh - 70px);
+    height: calc(100vh - var(--tamanho_header));
     visibility: visible;
     overflow-y: auto;
   }
+
+  #nav.active #circulo_esquerdo {
+    display: none;
+    transition: 0.6s;
+
+  }
+  #nav.active #circulo_direito {
+    display: none;
+    transition: 0.6s;
+
+  }
+  #nav.active #fundo_header {
+    display: none;
+    transition: 0.6s;
+
+  } 
+
 
   #menu a {
     color: #00A1D1;
@@ -131,7 +148,6 @@ header{
 
     /* título topo da página */
     .topo_pagina{
-        overflow: hidden;
         padding-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -164,7 +180,7 @@ header{
         font-family: 'Semplicita-Semibold';
         font-size: var(--topo_pagina);
         color: #0ABAB5;
-        padding-bottom: 1.5rem;
+        padding-bottom: 2.2rem;
     }
 
     .topo_pagina p{
@@ -225,7 +241,7 @@ header{
     .botao_contato{
       width: 200px;
       align-items: center;
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
 
     .centraliza{
@@ -240,8 +256,23 @@ header{
       margin-left: 1rem;
     }
 
+    #servicos li:first-child{
+      padding-top: 0;
+
+    }
+
     #servicos{
       padding-bottom: 1rem;
+    }
+
+    /* imagem de serviços */
+    #servico_imagem{
+      border-radius: 61px 0px 61px 0px;
+      width: 80%;
+      margin: auto;
+      display: block;
+      padding-bottom: 2rem;
+      padding-top: 1.5rem;
     }
   
   /* footer */
@@ -260,6 +291,8 @@ header{
   footer{
     padding-top: 2rem;
     background-image: url("../imagens/fundo_footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-bottom: 2rem;
   }
   .footer{
@@ -303,10 +336,14 @@ header{
 
  @media (min-width: 600px){
 
-    /* :root{
+     :root{
 
-        /* TABLET 
-       --cabecalho-01: 4.6rem;
+        /* TABLET */
+        --topo_pagina: 3rem;
+        --titulo_grande: 2rem;
+        --botao: 1.1rem;
+        --lista: 1.5rem;
+        --tamanho_header: 0px;
        --cabecalho-02: 2.8rem;
        --cabecalho-03: 2.6rem;
        --cabecalho-04: 2.4rem;
@@ -317,9 +354,77 @@ header{
        --paragrafo-03: 1.8rem;
        --link-01: 2rem;
    
-    */
+        }
+  .container{
+    margin: 3rem;
+  }
+
+   p{
+    font-size: var(--paragrafo);
+
+   }
+
+   /* header */
+   #logo{
+    width: 175px;
+  }
+  #hamburger {
+    width: 30px;
+    border-top: 3px solid;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    width: 30px;
+    height: 3px;
+    
+  }
+   /* topo da página */
+   #subtitulo{
+    font-size: 1.375rem;
+    padding-bottom: 1.5rem;
+   }
+
+   #circulo_esquerdo{
+    height: 70%;
+    top: 10%;
+
+  }
+
+  #circulo_direito{
+    height: 70%;
+    top: 10%;
+  }
+  .topo_pagina h1{
+    padding-bottom: 3rem;
+  }
+   /* seção nossos serviços */
+    #servico_secao{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #servico_imagem{
+      width: 40%;
+      padding: 0;
+      margin: 0;
+    }
+
+    #servicos li{
+      font-size: var(--lista);
+    }
+
+    /* seção serviços lista  */
+    #servicos li{
+      padding-top: 2rem;
 
     }
+
+    #servicos li:first-child{
+      padding-top: 0;
+
+    }
+ }
 @media (min-width: 1180px){
 
     :root{
@@ -338,11 +443,20 @@ header{
     
     }
 
+
+    .container_desktop{
+      margin: 0 auto;
+      max-width: 1080px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     #menu{
         position: relative;
         display: flex;
         list-style: none;
-        gap: .5rem;
+        gap: 1rem;
         visibility: visible;
         overflow-y: visible;
         z-index: 1;
@@ -358,25 +472,23 @@ header{
     }
 
     #menu a:hover {
-    background: rgba(0, 0, 0, 0.05);
+      color: #03FF69;
+      border-bottom: 4px solid #03FF69;
+    
     }
 
-    #logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    }
 
     #header {
     box-sizing: border-box;
-    height: 70px;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #e7e7e7;
+    
     }
 
     #menu {
+    background: none;
     display: flex;
     list-style: none;
     gap: 0.5rem;
@@ -385,6 +497,8 @@ header{
     #menu a {
     display: block;
     padding: 0.5rem;
+    border-bottom: none;
+    font-size: 1.5rem;
     }
 
     #btn-mobile {
@@ -393,3 +507,4 @@ header{
 
 
 }
+ 
