@@ -451,13 +451,13 @@ header{
     p{
       font-size: 1.6rem;
     }
-
-
-    .container_desktop{
-      margin: 0 auto;
-      max-width: 1300px;
-
+    .container{
+      margin: 3rem;
     }
+
+
+
+
 
     #menu{
         position: relative;
@@ -567,6 +567,16 @@ header{
     .secao_contato{
       align-items: center;
     }
+
+
+}
+
+@media (min-width: 1400px){
+  .container_desktop{
+    margin: 0 auto;
+    max-width: 1300px;
+
+  }
 
 
 }
