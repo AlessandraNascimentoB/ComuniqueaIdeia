@@ -518,6 +518,26 @@ header{
       width: 400px;
     }
 
+    /* clientes */
+    .cliente_foto{
+      border-radius: 100px;
+      width: 200px;
+      height: 200px;
+      filter: saturate(0); 
+    }
+
+    .secao_cliente h3{
+      display: none;
+    }
+
+    .secao_cliente:hover img{
+      filter: saturate(100%); 
+    }
+
+    .secao_cliente:hover h3{
+      display: block;
+    }
+
     /* footer */
     .footer{
       flex-direction: row;
