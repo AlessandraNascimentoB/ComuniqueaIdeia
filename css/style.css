@@ -442,10 +442,32 @@ header{
     }
 
     #imagem_botao{
-      display: none;
-
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
+
+    #imagem_botao button{
+      margin-top: 2rem;
+      background-color: transparent;
+      border: 2px solid #03FF69;
+    }
+
+    #imagem_botao button:hover{
+      margin-top: 2rem;
+      background-color: #03FF69;
+      border: none;
+    }
+
+    #imagem_botao button:hover a{
+      color: #FBF7F7;
+    }
+
+
+    #imagem_botao button a{
+      color:#00A1D1;
+    }
+
 
     #servico_imagem{
       width: 300px;
@@ -616,6 +638,17 @@ header{
     }
 
     /* clientes */
+
+    .clientes{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .cliente_bloco{
+      display: flex;
+      flex-direction: column
+    }
     .cliente_foto{
       border-radius: 100px;
       width: 200px;
@@ -623,16 +656,16 @@ header{
       filter: saturate(0); 
     }
 
-    .secao_cliente h3{
+    .cliente_bloco h3{
       display: none;
     }
 
-    .secao_cliente:hover img{
+    .cliente_bloco:hover img{
       filter: saturate(100%); 
     }
 
-    .secao_cliente:hover h3{
-      display: block;
+    .cliente_bloco:hover h3{
+      display: flex;
     }
 
     /* footer */
