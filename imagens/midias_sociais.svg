@@ -3,12 +3,12 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #0abab5;
+        fill: #00a1d1;
       }
 
       .cls-2 {
         fill: none;
-        stroke: #0abab5;
+        stroke: #00a1d1;
         stroke-linejoin: bevel;
         stroke-width: 42.52px;
       }

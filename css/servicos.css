@@ -31,6 +31,48 @@
         padding-bottom: 2.2rem;
     }
 
+    /* serviços gerais */
+
+    #servicos_gerais{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #servicos_gerais a{
+        text-decoration: none;
+    }
+
+    #servicos_gerais li{
+        margin-bottom: 1.5rem;
+    }
+
+    
+
+    .areas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .area_nome{
+        padding-top: 0.7rem;
+        font-size: 16px;
+        line-height: 130%;
+        font-family: 'Semplicita-Medium';
+        color: #18193F;
+        width: 125px;
+        text-align: center;
+    }
+
+    .icone_geral{
+        width: 50px;
+        height: 50px;
+
+    }
+
+
+
 
  /* TABLET */
 
@@ -86,9 +128,22 @@
             padding-bottom: 2.2rem;
         }
 
-        .icone_geral img{
-            width: 150px;
-            height: 150px;
+        /* seção com todas as áreas listadas */
+
+        .icone_geral{
+            width: 100px;
+            height: 100px;
+    
+        }
+
+        .area_nome{
+            padding-top: 1.2rem;
+            font-size: 28px;
+            line-height: 130%;
+            font-family: 'Semplicita-Medium';
+            color: #18193F;
+            width: 200px;
+            text-align: center;
         }
 
     }

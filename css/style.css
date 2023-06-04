@@ -8,6 +8,11 @@
     src: url('../fontes/SemplicitaPro.otf')
 }
 
+@font-face {
+  font-family: 'Semplicita-Medium';
+  src: url('../fontes/SemplicitaPro-Medium.otf')
+}
+
     :root{
 
         /* MOBILE */

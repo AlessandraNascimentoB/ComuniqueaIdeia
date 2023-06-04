@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550.13 769.7">
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550.13 790.96">
   <defs>
     <style>
       .cls-1 {
-        fill: #0abab5;
-      }
-
-      .cls-2 {
         fill: none;
-        stroke: #0abab5;
+        stroke: #00a1d1;
         stroke-miterlimit: 10;
         stroke-width: 42.52px;
       }
@@ -16,9 +12,9 @@
   </defs>
   <g id="Camada_3" data-name="Camada 3">
     <g>
-      <ellipse class="cls-1" cx="276.47" cy="252.4" rx="165.67" ry="252.4"/>
-      <path class="cls-2" d="M21.1,365.67c15.65,127,123.97,223.81,251.71,225.17,127.37,1.35,237.5-92.57,256.29-218.76"/>
-      <line class="cls-2" x1="276.02" y1="590.84" x2="276.02" y2="769.7"/>
+      <ellipse class="cls-1" cx="276.47" cy="273.66" rx="165.67" ry="252.4"/>
+      <path class="cls-1" d="M21.1,386.93c15.65,127,123.97,223.81,251.71,225.17,127.37,1.35,237.5-92.57,256.29-218.76"/>
+      <line class="cls-1" x1="276.02" y1="612.1" x2="276.02" y2="790.96"/>
     </g>
   </g>
 </svg>
