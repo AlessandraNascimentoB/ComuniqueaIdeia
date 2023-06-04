@@ -71,6 +71,27 @@
 
     }
 
+    /* areas explicadas */
+    .icone_nome{
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .icone_inferior{
+        width: 30px;
+        height: 30px;
+    }
+
+    .servicos{
+        padding-top: 1rem;
+    }
+
+    .servicos li{
+        line-height: 150%;
+        padding: 0.3rem;
+        color: #18193F;
+    }
+
 
 
 
@@ -78,11 +99,11 @@
 
  @media (min-width: 600px){
 
-    /* :root{
+    :root{
 
-       TABLET 
+       /* TABLET  */
        --topo_pagina: 3rem;
-       --titulo_grande: 2rem;
+       --titulo_grande: 1.6rem;
        --botao: 1.1rem;
        --lista: 1.5rem;
        --tamanho_header: 0px;
@@ -96,13 +117,45 @@
       --paragrafo-03: 1.8rem;
       --link-01: 2rem;
   
-       } */
+       } 
+
+       .topo_pagina{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+       }
+
+       #subtitulo{
+        width: 75%;
+       }
+
+       .icone_nome{
+        align-items: baseline;
+       }
+
+       /* explicação de cada area */
+       .explicacao_area{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+       }
+
+       .explicacao_area p{
+        width: 50%;
+       }
+
+       .servicos{
+        padding: 0;
+       }
+
+       .servicos li{
+        font-size: 16px;
+       }
     }
     @media (min-width: 1180px){
 
-        /* :root{
+        :root{
         
-             WEB 
+             /* WEB  */
             --topo_pagina: 3rem;
             --titulo_grande: 2rem;
             --botao: 1.1rem;
@@ -119,7 +172,7 @@
             --paragrafo-03: 1.9rem;
             --link-01: 2rem;
         
-        } */
+        }
 
         h1{
             font-family: 'Semplicita-Semibold';
@@ -144,6 +197,20 @@
             color: #18193F;
             width: 200px;
             text-align: center;
+        }
+
+        /* cada area explicada */
+        .servicos li{
+            font-size: 24px;
+        }
+
+        .servicos{
+            padding-bottom: 4rem;
+        }
+
+        .explicacao_area{
+            gap: 4rem;
+            justify-content: flex-start;
         }
 
     }

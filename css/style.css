@@ -268,18 +268,18 @@ header{
     }
 
     /* Nossos serviços */
-    #servicos li{
+    .servicos li{
       padding-top: 0.8rem;
       list-style: disc;
       margin-left: 1rem;
     }
 
-    #servicos li:first-child{
+    .servicos li:first-child{
       padding-top: 0;
 
     }
 
-    #servicos{
+    .servicos{
       padding-bottom: 1rem;
     }
 
@@ -480,17 +480,17 @@ header{
       margin: 0;
     }
 
-    #servicos li{
+    .servicos li{
       font-size: var(--lista);
     }
 
     /* seção serviços lista  */
-    #servicos li{
+    .servicos li{
       padding-top: 2rem;
 
     }
 
-    #servicos li:first-child{
+    .servicos li:first-child{
       padding-top: 0;
 
     }
