@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 756.52 781.52">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-2 {
+        fill: #0abab5;
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        stroke: #0abab5;
+        stroke-linejoin: bevel;
+        stroke-width: 42.52px;
+      }
+
+      .cls-5, .cls-6 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clippath">
+      <circle class="cls-6" cx="514.76" cy="567.76" r="192.5"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <circle class="cls-6" cx="153.76" cy="290.76" r="132"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <circle class="cls-6" cx="633.76" cy="122.76" r="102"/>
+    </clipPath>
+  </defs>
+  <g id="Camada_3" data-name="Camada 3">
+    <circle class="cls-5" cx="153.76" cy="290.76" r="132.5"/>
+    <circle class="cls-5" cx="633.76" cy="122.76" r="101.5"/>
+    <circle class="cls-5" cx="514.76" cy="567.76" r="192.5"/>
+    <line class="cls-5" x1="259.08" y1="370.45" x2="367.53" y2="446.83"/>
+    <line class="cls-5" x1="621.96" y1="224.26" x2="569.68" y2="384.28"/>
+    <g class="cls-4">
+      <circle class="cls-2" cx="515.26" cy="531.26" r="53.5"/>
+      <circle class="cls-2" cx="515.26" cy="710.26" r="113.5"/>
+    </g>
+    <g class="cls-3">
+      <circle class="cls-2" cx="154.1" cy="265.73" r="36.69"/>
+      <circle class="cls-2" cx="154.1" cy="388.47" r="77.83"/>
+    </g>
+    <g class="cls-1">
+      <circle class="cls-2" cx="634.02" cy="103.42" r="28.35"/>
+      <circle class="cls-2" cx="634.02" cy="198.27" r="60.14"/>
+    </g>
+  </g>
+</svg>

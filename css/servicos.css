@@ -23,9 +23,14 @@
        --paragrafo-03: 1.8rem;
        --link-01: 2rem;
     } */
-#sobre_daniel{
-    display: flex;
-}
+
+    h1{
+        font-family: 'Semplicita-Semibold';
+        font-size: var(--topo_pagina);
+        color: #0ABAB5;
+        padding-bottom: 2.2rem;
+    }
+
 
  /* TABLET */
 
@@ -73,5 +78,17 @@
             --link-01: 2rem;
         
         } */
+
+        h1{
+            font-family: 'Semplicita-Semibold';
+            font-size: var(--topo_pagina);
+            color: #0ABAB5;
+            padding-bottom: 2.2rem;
+        }
+
+        .icone_geral img{
+            width: 150px;
+            height: 150px;
+        }
 
     }

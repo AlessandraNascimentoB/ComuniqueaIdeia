@@ -656,17 +656,7 @@ header{
       filter: saturate(0); 
     }
 
-    .cliente_bloco h3{
-      display: none;
-    }
 
-    .cliente_bloco:hover img{
-      filter: saturate(100%); 
-    }
-
-    .cliente_bloco:hover h3{
-      display: flex;
-    }
 
     /* footer */
     .footer{
