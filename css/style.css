@@ -299,16 +299,16 @@ header{
     .clientes{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       flex-wrap: wrap;
+      justify-content: center;
+ 
     }
 
     .cliente_bloco{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding: 1rem 0.5rem 1rem 0.5rem;
       min-height: 150px;
       justify-content: center;
     }
@@ -532,6 +532,17 @@ header{
       padding-top: 0;
 
     }
+
+    /* clientes */
+    .clientes{
+      justify-content: space-between;
+    }
+
+    #clientes_pessoa{
+      justify-content: flex-start;
+      gap:2rem;
+
+    }
  }
 @media (min-width: 1180px){
 
@@ -539,7 +550,7 @@ header{
     
         /*  WEB */
         --topo_pagina: 3.75rem;
-        --titulo_grande: 3rem;
+        --titulo_grande: 2.5rem;
         --botao: 1.1rem;
         --lista: 1.5rem;
         --tamanho_header: 0px;
@@ -682,23 +693,44 @@ header{
 
     /* clientes */
 
-    .clientes{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-    }
-
     .cliente_bloco{
       display: flex;
-      flex-direction: column
+      justify-content: space-evenly;
+      flex-direction: column;
+      min-height: 200px;
+      align-items: center;
+
+
     }
     .cliente_foto{
       border-radius: 100px;
-      width: 200px;
-      height: 200px;
+      width: 175px;
+      height: 175px;
       filter: saturate(0); 
     }
+
+    .cliente_bloco h3{
+      display: none;
+    }
+
+    .cliente_bloco:hover h3{
+      display: flex;
+    }
+
+    .cliente_bloco:hover .cliente_foto{
+      filter: saturate(1);
+    }
+
+    .cliente_logo{
+      width: 220px;
+      filter: saturate(0); 
+    }
+
+    .cliente_bloco:hover .cliente_logo{
+      filter: saturate(1);
+    }
+
+
 
 
 
