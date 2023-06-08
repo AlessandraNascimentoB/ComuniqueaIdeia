@@ -348,6 +348,9 @@ header{
 
     /* imagem de serviços */
     #servico_imagem{
+      background-image: url("../imagens/nossos_serviços.png");
+      background-repeat: no-repeat;
+      background-position: center center;
       z-index: 1;
       border-radius: 50px 0px 50px 0px;
       width: 230px;
@@ -554,6 +557,7 @@ header{
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      
       /* gap: 3rem; */
 
     }
@@ -565,8 +569,16 @@ header{
       margin: 0;
     }
 
+    .servicos{
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .servicos li{
       font-size: var(--lista);
+      padding-bottom: 1rem;
     }
 
     #lampada_mobile{
@@ -758,7 +770,8 @@ header{
     /* nossos serviços */
 
     #servico_imagem{
-      width: 400px;
+      width: 550px;
+      height: 440px;
     }
 
     /* clientes */
