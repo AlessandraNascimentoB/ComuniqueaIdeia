@@ -286,7 +286,7 @@ header{
       padding-bottom: 1rem;
     }
 
-    #servicos_secao{
+    #servico_secao{
       margin-bottom: 2rem;
     }
 
@@ -472,9 +472,9 @@ header{
 
         /* TABLET */
         --topo_pagina: 3rem;
-        --titulo_grande: 1.8rem;
+        --titulo_grande: 1.5rem;
         --botao: 1.1rem;
-        --lista: 1.5rem;
+        --lista: 1.1rem;
         --tamanho_header: 0px;
        --cabecalho-02: 2.8rem;
        --cabecalho-03: 2.6rem;
@@ -488,7 +488,7 @@ header{
    
         }
   .container{
-    margin: 3rem;
+    margin: 2.5rem;
   }
 
    p{
@@ -553,18 +553,24 @@ header{
     #servico_secao{
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      gap: 4rem;
+      justify-content: space-between;
+      /* gap: 3rem; */
+
     }
 
     #servico_imagem{
-      width: 300px;
+      width: 250px;
+      height: 250px;
       padding: 0;
       margin: 0;
     }
 
     .servicos li{
       font-size: var(--lista);
+    }
+
+    #lampada_mobile{
+      display: none;
     }
 
     /* seção serviços lista  */
