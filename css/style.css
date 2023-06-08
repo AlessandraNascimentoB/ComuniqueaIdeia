@@ -344,6 +344,10 @@ header{
       color:#00A1D1;
     }
 
+    #degrade_verde{
+      display: none;
+    }
+
 
 
     /* imagem de serviços */
@@ -479,7 +483,6 @@ header{
         --botao: 1.1rem;
         --lista: 1.1rem;
         --tamanho_header: 0px;
-       --cabecalho-02: 2.8rem;
        --cabecalho-03: 2.6rem;
        --cabecalho-04: 2.4rem;
        --cabecalho-05: 3.6rem;
@@ -563,14 +566,13 @@ header{
     }
 
     #servico_imagem{
-      width: 250px;
-      height: 250px;
+      width: calc(500px*0.8);
+      height: calc(400px*0.8);
       padding: 0;
       margin: 0;
     }
 
     .servicos{
-      height: 400px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -578,7 +580,7 @@ header{
 
     .servicos li{
       font-size: var(--lista);
-      padding-bottom: 1rem;
+
     }
 
     #lampada_mobile{
@@ -769,22 +771,53 @@ header{
 
     /* nossos serviços */
 
+    #servico_secao{
+      padding-bottom: 2rem;
+    }
+
     #servico_imagem{
-      width: 550px;
-      height: 440px;
+      width: calc(500px*1.2);
+      height: calc(400px*1.2);
+    }
+
+    .servicos{
+      height: 376px;
+    }
+    .servicos li{
+      padding-bottom: 0.75rem;
+    }
+
+    #degrade_verde{
+      display: flex;
+      position: absolute;
+      z-index: -1;
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      right: 0;
+      height: 1000px;
+      width: 500px;
+      
+
+
     }
 
     /* clientes */
+
+    .secao_cliente{
+      margin-bottom: 2rem;
+    }
 
     .cliente_bloco{
       display: flex;
       justify-content: space-evenly;
       flex-direction: column;
-      min-height: 200px;
+      min-height: 250px;
       align-items: center;
 
 
+
     }
+
     .cliente_foto{
       border-radius: 100px;
       width: 175px;
@@ -794,10 +827,16 @@ header{
 
     .cliente_bloco h3{
       display: none;
+      width: 180px;
     }
 
     .cliente_bloco:hover h3{
-      display: flex;
+      display: inline;
+      text-align: center;
+      align-items: center;
+      font-family: 'Semplicita-Semibold';
+      font-size: 20px;
+
     }
 
     .cliente_bloco:hover .cliente_foto{
