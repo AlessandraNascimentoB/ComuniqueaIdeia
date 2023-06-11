@@ -45,6 +45,7 @@
 
     #servicos_gerais li{
         margin-bottom: 1.5rem;
+        
     }
 
     
@@ -82,14 +83,16 @@
         height: 30px;
     }
 
-    .servicos{
+    .servicos_lista{
         padding-top: 1rem;
     }
 
-    .servicos li{
+    .servicos_lista li{
         line-height: 150%;
         padding: 0.3rem;
+        list-style: disc;
         color: #18193F;
+        margin-left: 1rem;
     }
 
 
@@ -143,12 +146,16 @@
         width: 50%;
        }
 
-       .servicos{
+       .servicos_lista{
         padding: 0;
        }
 
-       .servicos li{
+       .servicos_lista li{
         font-size: 16px;
+        padding-bottom: 0.8rem;
+        list-style: disc;
+        margin-left: 1rem;
+      
        }
     }
     @media (min-width: 1180px){
@@ -189,6 +196,7 @@
     
         }
 
+
         .area_nome{
             padding-top: 1.2rem;
             font-size: 28px;
@@ -200,11 +208,11 @@
         }
 
         /* cada area explicada */
-        .servicos li{
+        .servicos_lista li{
             font-size: 24px;
         }
 
-        .servicos{
+        .servicos_lista{
             padding-bottom: 4rem;
         }
 
